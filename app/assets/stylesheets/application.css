@@ -14,4 +14,8 @@
  *= require_self
  */
 
+ /* components */
+@import url("./components/button.css");
 @import url("./components/card.css");
+@import url("./components/footer.css");
+@import url("./components/navbar.css");

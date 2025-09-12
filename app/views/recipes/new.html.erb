@@ -1,4 +1,9 @@
 <div class="new-recipe">
   <input type="text">
   <input type="submit" value="submit">
+  <%= @scripts.each do |script| %>
+    <ol>
+      <li><%= script.text %></li>
+    </ol>
+  <% end %>
 </div>

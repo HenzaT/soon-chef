@@ -1,5 +1,8 @@
 <div class="home">
   <h1>See All Recipes</h1>
+  <%= link_to new_recipe_path do %>
+    <button>Add New Recipe</button>
+  <% end %>
   <div class="recipe-cards">
     <% @recipes.each do |recipe| %>
       <div class="card">
