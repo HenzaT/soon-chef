@@ -1,0 +1,12 @@
+<div class="home">
+  <h1>See All Recipes</h1>
+  <div class="recipe-cards">
+    <% @recipes.each do |recipe| %>
+      <div class="card">
+        <h2 class="card-title"><%= recipe.name %></h2>
+        <img src="<%= recipe.image %>" alt="" class="card-image">
+        <p class="card-rating"><%= recipe.rating %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
