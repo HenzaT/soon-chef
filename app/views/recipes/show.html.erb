@@ -1,3 +1,14 @@
 <div class="show-recipe">
-  <%= @recipe.name %>
+  <div class="recipe-info">
+    <h2><%= @recipe.name %></h2>
+    <h3><%= @recipe.rating %></h3>
+  </div>
+  <div class="recipe-ingredients">
+    <ul>
+      <li><%= @recipe.ingredients %></li>
+    </ul>
+  </div>
+  <div class="recipe-method">
+    <%= @recipe.method %>
+  </div>
 </div>

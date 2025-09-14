@@ -1,9 +1,15 @@
 <div class="new-recipe">
   <input type="text">
   <input type="submit" value="submit">
-  <%= @scripts.each do |script| %>
-    <ol>
-      <li><%= script.text %></li>
-    </ol>
+  <%= @graph %>
+  <%= @steps %>
+  <%= simple_form_for @recipe do |f| %>
+    <%= f.input :name, placeholder: @recipe_name %>
+    <%= f.input :ingredients, input_html: { value: @ingredients } %>
+    <%= f.input :method, input_html: { value: @steps } %>
+    <%= f.input :note %>
+    <%= f.input :rating, collection: 0..5 %>
+    <%= f.input :image, input_html: { value: @image } %>
+    <%= f.button :submit %>
   <% end %>
 </div>

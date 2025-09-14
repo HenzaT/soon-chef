@@ -12,10 +12,44 @@
  *
  *= require_tree .
  *= require_self
+
+ /*
+ *= require font-awesome
  */
 
  /* components */
 @import url("./components/button.css");
 @import url("./components/card.css");
 @import url("./components/footer.css");
+@import url("./components/icon.css");
 @import url("./components/navbar.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  color: var(--black);
+}
+
+body {
+  background: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+:root {
+  --white: #F3EFEA;
+  --black: #231F20;
+  --blue: #7EBDC2;
+  --red: #BB4430;
+  --shadow: 3px 0px 3px 4px #3131314f;
+}

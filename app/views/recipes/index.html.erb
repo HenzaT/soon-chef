@@ -5,11 +5,17 @@
   <% end %>
   <div class="recipe-cards">
     <% @recipes.each do |recipe| %>
-      <div class="card">
-        <h2 class="card-title"><%= recipe.name %></h2>
-        <img src="<%= recipe.image %>" alt="" class="card-image">
-        <p class="card-rating"><%= recipe.rating %></p>
-      </div>
+      <%= link_to recipe_path(recipe) do %>
+        <div class="card">
+          <h2 class="card-title"><%= recipe.name %></h2>
+          <img src="<%= recipe.image %>" alt="" class="card-image">
+          <p class="card-rating"><%= recipe.rating %></p>
+          <%= link_to "Delete",
+            recipe_path(recipe),
+            data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'}
+          %>
+        </div>
+      <% end %>
     <% end %>
   </div>
 </div>
