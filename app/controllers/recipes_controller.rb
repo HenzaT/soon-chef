@@ -66,6 +66,6 @@ class RecipesController < ApplicationController
     @ingredients = @graph['recipeIngredient'].join(', ')
     steps = @graph['recipeInstructions'].map { |s| s['text'] }
     @steps = steps.join(' ')
-    @image = @graph['image'].join(', ')
+    @image = @graph['image'].first
   end
 end
