@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+# Exit on first error
+set -e
+
+# Start Rails and Vite in background
+./bin/rails server &
+./bin/vite dev &
+
+# Wait for both processes
+wait

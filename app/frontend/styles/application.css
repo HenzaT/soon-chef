@@ -25,12 +25,14 @@
 @import url("./components/icon.css");
 @import url("./components/navbar.css");
 
+@import url("./pages/home.css");
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -51,6 +53,7 @@ a {
   --white: #F3EFEA;
   --black: #231F20;
   --blue: #7EBDC2;
-  --red: #BB4430;
+  --dark-blue: #1e5457;
+  --red: #e8a195;
   --shadow: 3px 0px 3px 4px #3131314f;
 }

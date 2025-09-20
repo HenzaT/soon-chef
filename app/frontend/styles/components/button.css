@@ -1,0 +1,20 @@
+button {
+  border-radius: 50px;
+  border: 0.3px solid var(--black);
+  font-size: 1.1rem;
+  color: var(--white);
+  padding: 5px;
+  cursor: pointer;
+  background: var(--dark-blue);
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+.delete-btn {
+  padding: 15px;
+  border-radius: 50%;
+  border: 0.3px solid var(--black);
+}

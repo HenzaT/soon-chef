@@ -1,0 +1,31 @@
+form, .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  gap: 10px;
+}
+
+.input {
+  gap: 5px;
+}
+
+.new-recipe-form {
+  opacity: 0;
+}
+
+form.new_recipe {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+form.new_recipe.visible {
+  opacity: 1;
+  visibility: visible;
+  max-height: 500px;
+}
