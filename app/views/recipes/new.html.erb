@@ -1,12 +1,14 @@
 <div class="new-recipe" data-controller="recipe">
   <h3>type or paste a recipe url into the box</h3>
-  <input type="text">
-  <input type="submit" value="submit">
+  <div class="search-form">
+    <input type="text" class="url-input">
+    <input type="submit" value="show me the recipe!">
+  </div>
   <%= @graph %>
   <%= @steps %>
   <button data-recipe-target="button" data-action="click->recipe#openForm">Save Recipe?</button>
   <%= simple_form_for @recipe, data: { recipe_target: 'form' } do |f| %>
-    <%= f.input :name, placeholder: @recipe_name %>
+    <%= f.input :name, class: "name-input", placeholder: @recipe_name %>
     <%= f.input :ingredients, input_html: { value: @ingredients } %>
     <%= f.input :method, input_html: { value: @steps } %>
     <%= f.input :note %>

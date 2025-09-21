@@ -1,3 +1,3 @@
-.home > h1 {
-  text-align: center;
+.home {
+  background: url('./images/cooking1.jpg');
 }

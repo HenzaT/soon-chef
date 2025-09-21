@@ -1,20 +1,46 @@
-button {
+button, input[type=submit] {
   border-radius: 50px;
   border: 0.3px solid var(--black);
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--white);
-  padding: 5px;
+  padding: 5px 10px;
   cursor: pointer;
   background: var(--dark-blue);
   transition: transform 0.3s ease-in-out;
 }
 
-button:hover {
+button:hover, input[type=submit]:hover {
   transform: translateY(-3px);
 }
 
 .delete-btn {
-  padding: 15px;
+  padding: 10px;
   border-radius: 50%;
   border: 0.3px solid var(--black);
+}
+
+.add-recipe-btn {
+  margin: auto;
+}
+
+.devise-btn {
+  border-radius: 20px;
+  width: 300px;
+  padding: 15px 0;
+}
+
+.devise-btn.login {
+  background: var(--white);
+  color: var(--black);
+}
+
+.devise-btn.register {
+  background: var(--blue);
+  color: var(--black);
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

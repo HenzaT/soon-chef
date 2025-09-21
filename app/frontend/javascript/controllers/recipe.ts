@@ -1,7 +1,7 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets: string[] = [ ('form' as const), 'button' ];
+  static targets: string[] = [ 'form', 'button' ];
   declare readonly formTarget: HTMLElement;
   declare readonly buttonTarget: HTMLElement;
 

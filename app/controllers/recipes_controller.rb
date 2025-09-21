@@ -4,6 +4,11 @@ require 'net/http'
 require 'uri'
 
 class RecipesController < ApplicationController
+  skip_before_action :authenticate_user!, only: :home
+
+  def home
+  end
+
   def index
     @recipes = Recipe.all
   end

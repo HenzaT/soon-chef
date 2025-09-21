@@ -1,16 +1,40 @@
-form, .input {
+/* see button.css for styling of submit button */
+
+form, .input, .search-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-form {
+form.new_recipe {
   gap: 10px;
+  margin: 10px auto;
+  padding: 10px 0;
+  width: 70vw;
+  border: 1px solid var(--blue);
+  border-radius: 20px;
+}
+
+#recipe_name {
+  height: 5vh;
+  text-align: center;
 }
 
 .input {
   gap: 5px;
+}
+
+/* .input.text:focus {
+  border: 1px solid red;
+} */
+
+textarea {
+  width: 60vw;
+  height: 10vh;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .new-recipe-form {
@@ -27,5 +51,19 @@ form.new_recipe {
 form.new_recipe.visible {
   opacity: 1;
   visibility: visible;
-  max-height: 500px;
+  max-height: 1000px;
+}
+
+.search-form {
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.url-input {
+  height: 4vh;
+  text-align: center;
+  width: 70vw;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 5px;
 }

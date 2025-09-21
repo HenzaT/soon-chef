@@ -26,13 +26,29 @@
 @import url("./components/navbar.css");
 
 @import url("./pages/home.css");
+@import url("./pages/index.css");
 
 * {
   margin: 0;
   padding: 0;
+}
+
+#app-name {
+  font-family: "Sofia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+button {
+  font-family: "Actor", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1, h2, h3, p, a, form, input {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
+  font-weight: 350;
   font-style: normal;
 }
 

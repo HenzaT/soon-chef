@@ -1,7 +1,7 @@
-<div class="home">
+<div class="index-recipes">
   <h1>See All Recipes</h1>
   <%= link_to new_recipe_path do %>
-    <button>Add New Recipe</button>
+    <button class="add-recipe-btn">Add New Recipe</button>
   <% end %>
   <div class="recipe-cards">
     <%= render 'shared/recipe_card', recipes: @recipes %>
