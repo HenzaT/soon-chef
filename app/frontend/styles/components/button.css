@@ -29,12 +29,12 @@ button:hover, input[type=submit]:hover {
   padding: 15px 0;
 }
 
-.devise-btn.login {
+.devise-btn.login, .devise-btn.logout {
   background: var(--white);
   color: var(--black);
 }
 
-.devise-btn.register {
+.devise-btn.register, .devise-btn.edit {
   background: var(--blue);
   color: var(--black);
 }
@@ -43,4 +43,5 @@ button:hover, input[type=submit]:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
