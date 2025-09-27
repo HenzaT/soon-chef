@@ -34,7 +34,7 @@
 }
 
 /* fancy font */
-#app-name, .welcome {
+#app-name, .welcome, .home-text > h1 {
   font-family: "Sofia", cursive;
   font-weight: 400;
   font-style: normal;
