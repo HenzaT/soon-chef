@@ -1,5 +1,13 @@
 /* see button.css for styling of submit button */
 
+.devise-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
 .simple_form, .input, .search-form {
   display: flex;
   flex-direction: column;
@@ -46,7 +54,12 @@ input.email, input.password, #user_first_name, #user_last_name {
   font-size: 1rem;
   padding: 5px;
   border-radius: 10px;
+  border: 1px solid var(--blue);
   text-align: center;
+}
+
+input:focus {
+  border: 1px solid var(--dark-blue);
 }
 
 label.email, label.password {

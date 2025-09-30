@@ -1,7 +1,7 @@
 <div class="show-recipe">
   <div class="recipe-info">
     <h2><%= @recipe.name %></h2>
-    <h3><%= @recipe.rating %></h3>
+    <%= render "shared/star_rating" %>
   </div>
   <div class="recipe-ingredients">
     <ul>

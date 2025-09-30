@@ -1,0 +1,4 @@
+.show-recipe {
+  display: flex;
+  flex-direction: column;
+}
